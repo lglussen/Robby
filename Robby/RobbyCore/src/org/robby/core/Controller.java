@@ -28,7 +28,11 @@ public class Controller {
         return INSTANCE;
     }
 
-    public void registerNavigator(Navigator navigator) {
-        this.navigator = navigator;
+    public void registerPlugin(RobbyPlugin plugin) {
+        plugins.add(plugin);
+    }
+
+    public void removePlugin(RobbyPlugin plugin) {
+        plugins.remove(plugin);
     }
 }
