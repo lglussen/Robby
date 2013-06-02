@@ -6,6 +6,7 @@ package org.robby.core.input;
 
 import java.awt.AWTException;
 import java.awt.Robot;
+import java.awt.event.InputEvent;
 import org.openide.util.Exceptions;
 import org.robby.core.util.TimeUtil;
 
@@ -60,5 +61,11 @@ public class MouseInput {
         mouseMove(x, y);
         TimeUtil.sleep(50);
         mouseClick(button);
+    }
+
+    public static synchronized void mouseLeftClick() {
+        mousePress(InputEvent.BUTTON1_DOWN_MASK);
+        TimeUtil.sleep(50);
+        mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
     }
 }
