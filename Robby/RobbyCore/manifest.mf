@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.robby.core
+OpenIDE-Module-Install: org/robby/core/Installer.class
+OpenIDE-Module-Localizing-Bundle: org/robby/core/Bundle.properties
+OpenIDE-Module-Requires: org.openide.windows.WindowManager
+OpenIDE-Module-Specification-Version: 1.0
+
